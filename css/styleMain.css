@@ -1,0 +1,119 @@
+* {
+	background: linear-gradient(to bottom, #3498db, #ffffff);
+	margin: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+body {
+	/* font-family: kumar one outline; */
+}
+header {
+	margin-left:50px;
+	align-content:center;
+	padding:inherit;
+	background-color:aliceblue;
+	border:medium;	
+	overflow:visible;
+}
+h1 {
+	margin-left: 125px;
+	margin-top: 125px;
+	padding-top: 15px;
+}
+.navbar {
+	/* display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* end of added */
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	background-color:#C6F1F3;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.navbar button {
+	margin-left: 50px;
+	font-family: Cochin, Didot, "Didot Bold", "SignPainter-HouseScript", "SignPainter-HouseScript Semibold", Osaka;
+	font-size: 2em;
+	color:#9ACFFC;
+}
+.navbar a:hover {
+	background-color: #ddd;
+	color: black;
+}
+.navbar a.active {
+	background-color: #04aa6d;
+	color: white;
+}
+.navbar .icon {
+	display: none;
+}
+/* 
+.bubble {
+	width: 80px;
+	height: 80px;
+	background-color: #3498db;
+	border-radius:50%;
+	margin: 0 20px;
+	cursor: pointer;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+/* .bubble:hover {
+	transform: scale(1.2);
+	box-shadow: 0 0 20 0 rgba(52, 152, 219, 0.7);
+} */
+.container {
+	text-size: 24px;
+	margin-top:10px;
+	margin-left: 5px;
+	padding: 30px;
+	align-text: auto;
+	font-family: Kumar One Outline;
+	background-color: aliceblue;
+	border-radius: 85%;
+	box-shadow: 70px 40px 90px rgba(0, 0, 0.2);
+	width: 800px;
+	height: 500px;
+	position: relative;
+}
+.home {
+	margin-top:125px;
+	padding:inherit;
+	padding: 50px;
+	font-family:"American Typewriter";
+	font-size: 2em;
+	object-position: bottom;
+}
+.gallery {
+	
+}
+@media screen and (max-width: 600px) {
+	.navbar a:not(:first-child) {display:none;}
+	.navbar a.icon {
+		float: right;
+		display: block;
+	}
+}
+@media screen and (max-width: 600px) {
+	.navbar.responsive a.icon {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	.navbar.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 14px;
+		margin: 10px;
+	}
+	.container header h1 {
+		font-size: 12px;
+		margin: 10px;
+	}
+}

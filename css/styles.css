@@ -1,0 +1,119 @@
+body {
+    font-family: "Sofia", sans-serif;
+	font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ff9966, #ff5e62);
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+p, title {
+	font-size: 2em bold;
+	font-style: oblique;
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+   /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    margin: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+	margin-bottom: 1px;
+	padding: inherit;
+}
+
+.image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*added */
+form {
+	border:thick;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-container {
+	padding: 10px;
+	border: 5px solid #ccc;
+	outline: 5px solid black;
+	border-radius:18px;
+	box-shadow: 2px 30px 50px rgba(0, 0, 0, 1);
+}
+.contact-container {
+	margin: 2px;
+}
+.contact-container h2 {
+	text-align: center;
+	margin-bottom:15px;
+	font-family: 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif';
+	text-decoration: underline;
+	text-shadow: 15%;
+	color:darkblue;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+	margin-top: 1px;
+	margin-bottom: 5px;
+    padding: 1px;
+    position: fixed;
+    bottom: 10;
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768) {
+	header {
+		padding: 15px 0;
+	}
+	nav ul li {
+		margin: 0 10px;
+	}
+	section {
+		padding: 30px;
+	}
+	.gallery {
+	/*	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+		margin: 15px;
+		padding: 10px;
+	}
+	.image {
+		height: 150px;
+	}
+	form {
+		max-width: 300px;
+	}
+}

@@ -23,7 +23,8 @@ header {
 	margin-top: 50px;
 	padding: 50px;
 	align-text: center;
-	font-family:Kumar One Outline;
+	font-family:"Kumar One Outline";
+	font-display: fallback;
 	background-color:aliceblue;
 }
 

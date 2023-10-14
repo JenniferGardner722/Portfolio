@@ -15,21 +15,22 @@ button {
 	background-color: bisque;
 	border:dashed;
 }
-nav {
-	font-family: "Palatino";
-	background-color:antiquewhite;
-	padding: 10px;
-	font-size: 33pt;
-	color: black;
-	border: dashed;
-}
-nav a {
-	color: white;
+
+.navbar a {
+	font-size: 15px;
+	color:#98D0EB;
 	text-decoration: none;
-	margin-right: 15px;
+	font-weight: 800;
+	margin-left: 35px;
+	letter-spacing: 1px;
+	transition: .3s;
+	justify-content: space-between;
 }
-nav a:hover {
-	text-decoration: underline;
+
+.navbar a:hover,
+.navbar active  {
+	justify-content: space-between;
+	color: #00abf0;
 }
 .home {
 	border: thick;

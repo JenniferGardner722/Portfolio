@@ -11,18 +11,22 @@ header {
     padding: 10px 0;
     text-align: center;
 }
-nav ul {
-    list-style: none;
+
+.navbar a {
+	font-size: 15px;
+	color: #ededed;
+	text-decoration: none;
+	font-weight: 400;
+	margin-left: 35px;
+	letter-spacing: 1px;
+	transition: .3s;
+	justify-content: space-between;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
+.navbar a:hover,
+.navbar active  {
+	justify-content: space-between;
+	color: #00abf0;
 }
 .nameN {
 	font-family:'Georgia', serif;
@@ -112,6 +116,8 @@ h2 {
 	align-content: center;
 	box-shadow: 10px 10px 0 10px, rgba(225, 0, 250, 0);
 	border: medium black;
+	font-family: 'Sofia', sans-serif;
+	text-size: 16px;
 }
 .login-container p {
 	font-family:'Georgia', serif;

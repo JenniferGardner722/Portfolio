@@ -4,7 +4,19 @@ body, html {
     height: 100%;
     overflow: hidden;
 }
+nav ul {
+    list-style: none;
+}
 
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
 .background {
     position: fixed;
     top: 0;
@@ -24,13 +36,17 @@ header {
 	align-content: center;
 }
 .container {
+	margin-left: 129px;
+	margin-top: 25pt;
+	padding: 75px;
+	text-size: 2em;
 	background-color: #fff;
 	border-radius: 85%;
-	width: 800px;
-	height: 500px;
+	width: 1000px;
+	height: 750px;
 	box-shadow: 70px 40px 90px rgba(0, 0, 0.2);
-	position: relative;
-	overflow: hidden;
+	position: sticky;
+	
 }
 
 @keyframes gradient {
@@ -67,16 +83,55 @@ header {
 .bubble:hover {
     transform: scale(1.1);
 }
-
+.home {
+	background-position: bottom;
+	align-content: flex-end;
+}
 .section {
     padding: 100px;
     text-align: center;
     color: white;
     font-size: 24px;
 }
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+	margin-top: 1px;
+	margin-bottom: 5px;
+    padding: 1px;
+   position: fixed; 
+    bottom: 5%;
+	height: 5%;
+    width: 100%;
+	font-size: 1em;
+}
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
+	header {
+	padding: 15px 0;
+	}
+	nav ul li {
+		margin: 0 10px;
+	}
+	section {
+		padding: 30px;
+	}
+	.container {
+		margin: 0 10px;
+	}
+	.gallery {
+	/*	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+		margin: 15px;
+		padding: 10px;
+	}
+	.image {
+		height: 150px;
+	}
+	form {
+		max-width: 300px;
+	}
     .bubble-nav {
         bottom: 10px;
     }
@@ -92,6 +147,42 @@ header {
     }
 }
 
+@media screen and (max-width: 600px) {
+	 header {
+		padding: 15px 0;
+	}
+	nav ul li {
+		margin: 0 10px;
+	}
+	section {
+		padding: 30px;
+	}
+	}
+	.gallery {
+	/*	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); */
+		margin: 15px;
+		padding: 10px;
+	}
+	.image {
+		height: 150px;
+	}
+	form {
+		max-width: 300px;
+	}
+    .bubble-nav {
+        bottom: 10px;
+    }
+
+    .bubble {
+        width: 40px;
+        height: 40px;
+        margin: 0 8px;
+    }
+
+    .section {
+        padding: 50px;
+    }
+}
 @media screen and (max-width: 480px) {
     .bubble {
         width: 30px;

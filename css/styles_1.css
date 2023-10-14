@@ -7,6 +7,7 @@ body {
 }
 button {
 	font-family:"palatino";
+	font-size: 1em;
 	color: gray;
 	margin: 30px;
 	padding: 15px;
@@ -16,8 +17,19 @@ button {
 }
 nav {
 	font-family: "Palatino";
+	background-color:antiquewhite;
+	padding: 10px;
 	font-size: 33pt;
 	color: black;
+	border: dashed;
+}
+nav a {
+	color: white;
+	text-decoration: none;
+	margin-right: 15px;
+}
+nav a:hover {
+	text-decoration: underline;
 }
 .home {
 	border: thick;
@@ -33,29 +45,32 @@ h1 {
 	font-size: 44px;
 	text-decoration:underline;
 }
-title {
-	font-size: 44px;
+title p {
+	font-size: 18px;
 	font-style: oblique;
 	text-decoration: underline;
 }
-h2 {
+
+.navbar a {
+	font-size: 18px;
+	color:#AE2700;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 35px;
+	letter-spacing: 2px;
+	transition: .3s;
+	justify-content: space-between;
+}
+
+.navbar a:hover,
+.navbar active  {
+	justify-content: space-between;
+	color: #00abf0;
+}
+.home h2 {
 	font-size: 44px;
 	text-decoration: underline;
 }
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
 section {
 	margin: 20pt;
     padding: 50px;
@@ -116,10 +131,12 @@ footer {
     text-align: center;
 	margin-top: 1px;
 	margin-bottom: 5px;
-    padding: 10pt;
-    position: fixed;
-    bottom: 10;
+    padding: 1px;
+   position: float; 
+    bottom: 5%;
+	height: 5%;
     width: 100%;
+	font-size: 3em;
 }
 
 /* Media Queries for Responsiveness */

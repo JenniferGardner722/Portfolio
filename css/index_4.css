@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* $total: 144;  */
+$time: 4;
+$height: 400;
+$percent: .69444%;
+$dotSize: .9;
+
+* {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+}
+body {
+	background: black;
+	overflow: hidden;
+}
+.wrap {
+	position: relative;
+	height: 100%;
+}
+.c {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin-top: 1px;
+	animation: drop .3s infinite ease-in;
+}
+.c:after {
+	content: "";
+	position: absolute;
+	width: .3vw;
+	height: .3vw;
+	border-radius: 50%;
+		left: 50%;
+	bottom: -.15vw;
+	margin-left: -.15vw;
+}
+.c:nth-child(1) {
+	left: 0%;
+	background-image: linear-gradient(to bottom, black, rgba(255, 9, 0, 0.8));
+	animation-delay: -0.3888888889s;
+	} 
+.c:nth-child(1):after {
+	background:#f1171b;
+}
+@keyframes drop {
+		80% {
+			opacity: 1;
+		}
+		100% {
+			transform: translate3d(0, 150vh, 0);
+			opacity: 0;
+		}
+	}
+.c:nth-child(2) {
+	left: 0.6944%;
+	background-image: linear-gradient(to bottom, black, rgba(255, 18, 0, 0.8));
+	animation-delay: -3.5277777778s;
+}
+.c:nth-child(2):after {
+		background: #17f1dd;
+	}
+
+	@keyframes drop {
+		80% {
+			opacity: 1;
+		}
+		100% {
+			transform: translate3d(0, 150vh, 0);
+			opacity: 0;
+		}

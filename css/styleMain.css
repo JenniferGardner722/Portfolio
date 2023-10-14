@@ -10,7 +10,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	margin: 10px;
+	margin: 0;
 	padding: 12px;
 	/* font-family: kumar one outline; */
 }
@@ -77,6 +77,10 @@ aside {
 	font-family:"American Typewriter";
 	font-size: 1em;
 }
+.home {
+	background-position: bottom;
+	align-content: flex-end;
+}
 .gallery {
 	margin: 15px;
 	padding-top: 25px;
@@ -101,12 +105,68 @@ aside {
     height: 100%;
     object-fit: fill;
 }
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+	margin-top: 1px;
+	margin-bottom: 5px;
+    padding: 1px;
+   position: fixed; 
+    bottom: 5%;
+	height: 5%;
+    width: 100%;
+	font-size: 3em;
+}
+@media screen and (max-width: 320px) {
+	.navbar a:not(:first-child) {display:none;}
+	.navbar a.icon {
+		float: right;
+		display: block;
+	}
+* {
+	float: inherit;
+}
+.container {
+	float: inherit;
+}
+.gallery {
+	align-items: center;
+}
+.image-container {
+	float: inherit;
+}
+.image {
+	position: relative;
+}
+.image img {
+	position:relative;
+}
+}
 @media screen and (max-width: 600px) {
 	.navbar a:not(:first-child) {display:none;}
 	.navbar a.icon {
 		float: right;
 		display: block;
 	}
+* {
+	float: inherit;
+}
+.container {
+	float: inherit;
+}
+.gallery {
+	align-items: center;
+}
+.image-container {
+	float: inherit;
+}
+.image {
+	position: relative;
+}
+.image img {
+	position:relative;
+}
 }
 @media screen and (max-width: 600px) {
 	.navbar.responsive a.icon {
@@ -119,6 +179,24 @@ aside {
 		display: block;
 		text-align: left;
 	}
+	* {
+	float: inherit;
+}
+.container {
+	float: inherit;
+}
+.gallery {
+	align-items: center;
+}
+.image-container {
+	float: inherit;
+}
+.image {
+	position: relative;
+}
+.image img {
+	position:relative;
+}
 }
 @media screen and (max-width: 768px) {
 	body {
@@ -129,4 +207,22 @@ aside {
 		font-size: 12px;
 		margin: 10px;
 	}
+	* {
+	float: inherit;
+}
+.container {
+	float: inherit;
+}
+.gallery {
+	align-items: center;
+}
+.image-container {
+	float: inherit;
+}
+.image {
+	position: relative;
+}
+.image img {
+	position:relative;
+}
 }

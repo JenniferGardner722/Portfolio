@@ -46,19 +46,25 @@ h1 {
 	font-size: 44px;
 	text-decoration:underline;
 }
-title p {
-	font-size: 18px;
+.title {
+	margin: 2px;
+	padding: 4px;
+	font-size: 40px;
+}
+.title p {
+	font-size: 28px;
 	font-style: oblique;
 	text-decoration: underline;
 }
 
 .navbar a {
-	font-size: 18px;
+	font-size: 22px;
 	color:#AE2700;
-	text-decoration: none;
-	font-weight: 500;
+	text-decoration: underline;
+	border:medium white;
+	font-weight: 700;
 	margin-left: 35px;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	transition: .3s;
 	justify-content: space-between;
 }

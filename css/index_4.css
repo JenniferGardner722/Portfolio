@@ -15,24 +15,59 @@ body {
 	background: black;
 	overflow: hidden;
 }
+
+.navbar a {
+	font-size: 24px;
+	color:#FC0004;
+	text-decoration: underline;
+	font-weight: 400;
+	margin-left: 35px;
+	letter-spacing: 1px;
+	transition: .3s;
+	justify-content: space-between;
+	caret-color: darkorange;
+}
+
+.navbar a:hover,
+.navbar active  {
+	justify-content: space-between;
+	color: #00abf0;
+}
+.home-content {
+	align-content: center;
+	object-position:top;
+	background-blend-mode: color;
+	backface-visibility: visible;
+	visibility: visible;
+	font-family: "nosifer";
+	color: white;
+	text-size: 24px;
+}
 .wrap {
 	position: relative;
 	height: 100%;
 }
 .c {
-	position: relative;
+	position: fixed;
+	align-content: center;
 	height: 100%;
-	width: 100%;
-	margin-top: 1px;
-	animation: drop .3s infinite ease-in;
+	width: 90%;
+	margin-top: 10px;
+	padding: 10px;
+	animation: drop 30s infinite ease-in;
+	animation-direction: reverse;
+	color: white;
+	opacity: 40%;
+	object-position: 50%;
+	background-repeat: repeat;
 }
 .c:after {
 	content: "";
 	position: absolute;
 	width: .3vw;
 	height: .3vw;
-	border-radius: 50%;
-		left: 50%;
+	border-radius: 100%;
+		left: 100%;
 	bottom: -.15vw;
 	margin-left: -.15vw;
 }
@@ -40,6 +75,8 @@ body {
 	left: 0%;
 	background-image: linear-gradient(to bottom, black, rgba(255, 9, 0, 0.8));
 	animation-delay: -0.3888888889s;
+	opacity: 50%;
+
 	} 
 .c:nth-child(1):after {
 	background:#f1171b;
@@ -70,3 +107,4 @@ body {
 			transform: translate3d(0, 150vh, 0);
 			opacity: 0;
 		}
+}

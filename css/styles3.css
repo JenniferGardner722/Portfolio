@@ -4,7 +4,10 @@ body, html {
     height: 100%;
     overflow: hidden;
 }
-
+h1 {
+	font-family: "Sofia", sans-serif;
+	font-weight: 1100;
+}
 .navbar a {
 	font-size: 15px;
 	color:#98D0EB;
@@ -87,9 +90,17 @@ header {
 .bubble:hover {
     transform: scale(1.1);
 }
+.name p {
+	font-family: "georgia", serif;
+}
 .home {
 	background-position: bottom;
 	align-content: flex-end;
+	font-family: "Cambria", sans-serif;
+	color: navy;
+}
+.home h2 {
+	text-decoration: underline;
 }
 .section {
     padding: 100px;
